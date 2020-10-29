@@ -1,0 +1,9 @@
+{
+    "name": "cooking-app",
+    "description": "",
+    "scripts": {
+        "client": "cd client && npm start",
+        "server": "cd server && nodemon server.js",
+        "dev": "concurrently -n 'server,client' -c 'red,green' \"nodemon server\" \"npm run client\""
+    }
+}
